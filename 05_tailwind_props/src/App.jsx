@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Card from "./components/Card";
 function App() {
@@ -16,6 +14,7 @@ function App() {
         Tailwind test
       </h1>
       <Card username="my-Youtube-channel"  btnText="click here"/>
+      <br/>
       <Card username="my-insta-channel" btnText="visit here"/>
     </>
   );
