@@ -10,7 +10,7 @@ function App() {
   const addValue = () => {
     //counter = counter + 1
     setCounter(prevCounter => prevCounter + 1)
-    setCounter(prevCounter => prevCounter + 1 )
+    setCounter(prevCounter => prevCounter + 1)
     setCounter(prevCounter => prevCounter + 1)
     setCounter(prevCounter => prevCounter + 1)
     
@@ -27,14 +27,14 @@ function App() {
 
       <button
       onClick={addValue}
-      >Add value {counter}</button> 
+      >Add value: {counter}</button> 
       <br />
       <button
       onClick={removeValue}
-      >remove value {counter}</button>
-      <p>footer: {counter}</p>
+      >remove value: {counter}</button>
+      <p><b>footer: {counter}</b></p>
     </>
   )
 }
 
-export default App
+export default App;
