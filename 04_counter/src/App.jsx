@@ -6,7 +6,7 @@ function App() {
   // let counter = 15;
   const addValue = () => {
     // counter=counter+1;
-    if (counter > 0 && counter < 20) {
+    if (counter >= 0 && counter < 20) {
       setCounter((prevCounter) => prevCounter + 1);
     }
   };
@@ -19,10 +19,10 @@ function App() {
     <>
       <h1>code with react</h1>
       <h2>Counter value: {counter}</h2>
-      <button onClick={addValue}>Add value{counter}</button>
+      <button onClick={addValue}>Add value: {counter}</button>
       <br />
-      <button onClick={removeValue}>Remove value{counter}</button>
-      <p>footer:{counter}</p>
+      <button onClick={removeValue}>Remove value: {counter}</button>
+      <p><b>footer: {counter}</b></p>
     </>
   );
 }
